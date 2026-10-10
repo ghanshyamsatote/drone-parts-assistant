@@ -1,0 +1,36 @@
+{
+  "name": "drone-parts-assistant",
+  "version": "1.0.0",
+  "description": "AI shopping assistant that monitors Indian drone-parts stores and alerts on Telegram",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "db:seed": "tsx src/scripts/seed.ts",
+    "probe": "tsx src/scripts/probe.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "check": "tsx src/scripts/check.ts",
+    "simulate": "tsx src/scripts/simulate.ts",
+    "bot": "tsx src/bot.ts",
+    "notify": "tsx src/scripts/notify.ts",
+    "chat": "tsx src/scripts/chat.ts",
+    "stats": "tsx src/scripts/stats.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "dotenv": "^18.0.7",
+    "grammy": "^1.46.0",
+    "node-cron": "^4.6.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
